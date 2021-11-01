@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react';
 import axios  from 'axios';
-import ReactDOM from 'react-dom';
 //import mountNode from 'mountNode';
 
 // GitHub usernames: gaearon, sophiebits, sebmarkbage, bvaughn
