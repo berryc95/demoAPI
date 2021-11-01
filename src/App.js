@@ -4,19 +4,6 @@ import axios  from 'axios';
 import ReactDOM from 'react-dom';
 //import mountNode from 'mountNode';
 
-function xApp() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Updated message.
-        </p>
-        
-      </header>
-    </div>
-  );
-}
-
 // GitHub usernames: gaearon, sophiebits, sebmarkbage, bvaughn
 const CardList = (props) => (
 	<div>
@@ -29,7 +16,7 @@ class Card extends React.Component {
   	const profile = this.props;
   	return (
     	<div className="github-profile">
-    	  <img src={profile.avatar_url} />
+    	  <img alt="" src={profile.avatar_url} />
         <div className="info">
           <div className="name">{profile.name}</div>
           <div className="company">{profile.company}</div>
@@ -84,8 +71,5 @@ class App extends React.Component {
     );
   }	
 }
-
-
-
 
 export default App;
